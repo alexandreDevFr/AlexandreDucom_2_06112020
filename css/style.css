@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600&display=swap');
+
+/** -> COLOR
+
+Bleu        : #0065FC
+Bleu clair  : #DEEBFF
+Gris        : #F2F2F2
+
+**/
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+}
+
+h1,h2,h3,h4{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+i{
+  color: #0065FC;
+}
+
+header{
+  line-height: 72px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo{
+  display: flex;
+  flex-direction: row;
+}
+
+.menu{
+  text-align: center;
+}
+
+.menu ul{
+  list-style-type: none;
+  text-align: center;
+  display: flex;
+}
+
+.menu ul li{
+  margin: 0 12px 0 12px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a:hover{
+  color: #0065FC;
+}
+
+.para_header{
+  line-height: 30px;
+}
+
+.para_header h1{
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.para_header p{
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.search{
+  background-color: #fff;
+  width: 480px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.search i{
+  padding:  16px 21px 15px 21px;
+  background-color: #F2F2F2;
+  border-radius:  20px 0 0 20px;
+  color: black;
+  margin-left: -2px;
+}
+
+.search input{
+  background-color: #fff;
+  padding:  17px 24px 13px 120px;
+  outline: none;
+  border: 1px solid #F2F2F2;
+  margin-left: -5px;
+}
+
+.search button{
+  background-color: #0065FC;
+  border: 0;
+  padding: 18px 20px 13px 25.9px;
+  border-radius:  0px 20px 20px 0px;
+  margin-left: -5px;
+  color: #fff;
+}
+
+.search button a{
+  color: #fff;
+  font-size: 12px;
+}
+
+.filtre_header{
+  display: flex;
+  margin-top: 24px;
+  line-height: 55px;
+}
+
+.filtre_header h3{
+  margin-right: 32px;
+}
+
+.filtre_header button{
+  border-radius: 32px;
+  border: 1px solid #DEEBFF;
+  margin-right: 22px;
+  box-shadow: 0 2px 3px 0 rgba(0,0,0,.21);
+  background-color: #fff;
+}
+
+.filtre_header i{
+  margin-left: -6px;
+  padding: 18px;
+  background-color: #DEEBFF;
+  border-radius: 50%;
+  font-size: 18px;
+}
+
+.filtre_header a{
+  padding-left: 12px;
+  padding-right: 32px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+
+.info_header{
+
+}
+
+.info_header i{
+ padding: 7px;
+ border: 1px solid #DEEBFF;
+ border-radius: 100%;
+ font-size: 12px;
+ margin-right: 12px;
+}
+
+.info_header p{
+  display: contents;
+}
+
+/** Container **/
+
+.container{
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.Hebergement{
+  display: flex;
+  flex-direction: row;
+}
+
+.Hebergement_marseille{
+  width: 65%;
+  height: auto;
+  background-color: #F2F2F2;
+  margin-right: 64px;
+  border-radius: 32px;
+}
+
+.Hebergement_marseille h2{
+  margin-left: 8.5%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.position_block_hotel_marseille{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-left: 6%;
+}
+
+.block_hotel_marseille{
+  width: 300px;
+  height: 320px;
+  background-color: #fff;
+  border-radius: 32px;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  box-shadow: 0 5px 9px 0 rgba(0,0,0,.21);
+}
+
+.block_hotel_marseille_image img{
+  display: block;
+  max-width: 95%;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+
+.block_hotel_marseille h3{
+  margin-left: 6%;
+  margin-bottom: 4%;
+  margin-top: 6%;
+}
+
+.block_hotel_marseille p{
+  margin-left: 6%;
+}
+
+.block_hotel_marseille .black{
+  font-weight: bold;
+}
+
+.Hebergement_marseille .add_more{
+  margin-left: 8.5%;
+  margin-bottom: 32px;
+}
+
+.Hebergement_marseille .add_more a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.Hebergement_populaire{
+  width: 35%;
+  height: auto;
+  background-color: #F2F2F2;
+  border-radius: 32px;
+}
+
+.Hebergement_populaire h2{
+  margin-left: 8.5%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.title_populaire{
+  display: flex;
+}
+
+.Hebergement_populaire i{
+  margin-top: 32px;
+  font-size: 28px;
+  color: black;
+  margin-left: 220px;
+}
+
+.Hebergement_populaire_position{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.Hebergement_populaire_block{
+  width: 100%;
+  display: flex;
+}
+
+.Hebergement_populaire_block img{
+  display: block;
+  max-width: 60%;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin-top: 8px;
+}
+
+
+
+.Hebergement_populaire_block_v2{
+  width: 100%;
+  display: flex;
+}
+
+.Hebergement_populaire_block_v2_img img{
+  display: block;
+  max-width: 60%;
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  margin-top: 8px;
+}
