@@ -6,7 +6,7 @@ Bleu        : #0065FC
 Bleu clair  : #DEEBFF
 Gris        : #F2F2F2
 
-**/
+                          **/
 
 
 html,body{
@@ -26,6 +26,13 @@ p{
 i{
   color: #0065FC;
 }
+
+/**
+
+    Header
+
+
+                          **/
 
 header{
   line-height: 72px;
@@ -119,6 +126,20 @@ nav{
   font-size: 12px;
 }
 
+.button_responsiv{
+  display: none;
+}
+
+@media screen and (max-width: 500px){
+  .search button{
+    display: none;
+  }
+  .button_responsiv{
+    display: inherit;
+  }
+}
+
+
 .filtre_header{
   display: flex;
   margin-top: 24px;
@@ -135,6 +156,9 @@ nav{
   margin-right: 22px;
   box-shadow: 0 2px 3px 0 rgba(0,0,0,.21);
   background-color: #fff;
+  appearance: none;
+    -moz-appearance: none;
+-webkit-appearance: none;
 }
 
 .filtre_header i{
@@ -154,6 +178,11 @@ nav{
   font-size: 16px;
 }
 
+@media screen and (max-width: 1095px){
+  .filtre_header{
+    display: table;
+  }
+}
 
 .info_header{
 
@@ -171,7 +200,18 @@ nav{
   display: contents;
 }
 
-/** Container **/
+@media screen and (max-width: 500px){
+  .info_header p{
+    font-size: 14px;
+  }
+}
+
+/**
+
+    Container
+
+
+                          **/
 
 .container{
   margin-left: 32px;
@@ -179,9 +219,17 @@ nav{
   margin-bottom: 32px;
 }
 
+/**
+
+    Herbegement
+
+
+                          **/
+
 .Hebergement{
   display: flex;
   flex-direction: row;
+  margin-bottom: 32px;
 }
 
 .Hebergement_marseille{
@@ -294,8 +342,6 @@ nav{
   margin-top: 8px;
 }
 
-
-
 .Hebergement_populaire_block_v2{
   width: 100%;
   display: flex;
@@ -308,3 +354,146 @@ nav{
   border-top-right-radius: 28px;
   margin-top: 8px;
 }
+
+
+@media screen and (max-width: 1235px){
+  .Hebergement{
+    flex-direction: column-reverse;
+  }
+  .Hebergement_populaire{
+    margin-right: 64px;
+    margin-bottom: 32px;
+    width: 100%;
+  }
+  .Hebergement_marseille{
+    margin-right: 0px;
+    width: 100%;
+    background-color: #fff;
+  }
+  .position_block_hotel_marseille{
+    margin: 0;
+  }
+  .block_hotel_marseille{
+    width: 100%;
+    height: 260px;
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  .block_hotel_marseille_image img{
+    display: block;
+    width: 100%;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    margin-left: 8px;
+    margin-top: 8px;
+    height: 160px;
+  }
+  .block_hotel_marseille_image{
+    height: 200px;
+  }
+}
+
+/**
+
+    Activités à Marseille
+
+
+                          **/
+
+.activite_titre{
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.activite{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.activite_block img{
+  text-align:center;
+	float:left;
+	background-color:#cce196;
+	height:260px;
+	width:440px;
+	overflow:hidden;
+}
+
+.activite_block{
+  margin: 0 12px 0 12px;
+  width: 25%;
+}
+
+.none{
+  margin-left: 0;
+}
+
+.activite_block1 img{
+  height: auto;
+  width: 340px;
+}
+
+.activite_block2 img{
+  height: 260px;
+  width: 340px;
+}
+
+.activite_block3 img{
+  height: 260px;
+  width: 340px;
+}
+
+.activite_block4 img{
+  height: 260px;
+  width: 340px;
+}
+
+.activite_block5 img{
+  height: 260px;
+  width: 340px;
+}
+
+.activite_block6 img{
+  height: 260px;
+  width: 340px;
+}
+
+/**
+
+    Footer
+
+
+                          **/
+
+footer{
+  background-color: #F2F2F2;
+  display: flex;
+  width: 100%;
+}
+
+footer ul{
+  list-style-type: none;
+  padding-left: 0;
+}
+
+footer li{
+  margin-bottom: 12px;
+}
+
+.footer_left{
+  margin: 32px 220px 32px 32px;
+}
+
+.footer_center{
+  margin: 32px 220px 32px 32px;
+}
+
+.footer_right{
+  margin: 32px 0px 32px 32px;
+}
+
+@media screen and (max-width: 1070px){
+  footer{
+    display: grid;
+  }
