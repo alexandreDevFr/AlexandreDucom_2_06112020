@@ -14,9 +14,9 @@
         </div>
 
           <ul class="menu">
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activité</a></li>
-            <li><a href="#">S'inscrire</a></li>
+            <li class="active"><a href="#">Hébergements</a></li>
+            <li><a href="#">Activités</a></li>
+            <li class="blue"><a href="#"><span class="blue">S'inscrire</span></a></li>
           </ul>
 
       </nav>
@@ -27,25 +27,25 @@
       <div class="search">
           <i class="fas fa-map-marker-alt"></i>
           <input type="text" name="" value="" placeholder="Marseille,France">
-          <button type="button" name="button">Rechercher <i class="fas fa-search"></i></button> <!-- padding / 18px 20px 13px 20.9px; -->
+          <button type="button" name="button"><span class="search_hide">Rechercher</span><i class="fas fa-search"></i></button>
       </div>
       <div class="filtre_header">
         <h3>Filtres</h3>
         <button type="button" name="button">
           <i class="fas fa-money-bill-wave"></i>
-          Economique
+          <span class="weight">Economique</span>
         </button>
         <button type="button" name="button">
           <i class="fas fa-child"></i>
-          Familial
+          <span class="weight">Familial</span>
         </button>
         <button type="button" name="button">
           <i class="fas fa-heart"></i>
-          Romantique</a>
+          <span class="weight">Romantique</span>
         </button>
         <button type="button" name="button">
           <i class="fas fa-dog"></i>
-          Animeaux autorisés
+          <span class="weight">Animeaux autorisés</span>
         </button>
       </div>
       <div class="info_header">
@@ -63,6 +63,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i></a>
                   </figcaption>
             </figure>
             <figure class="block_hotel_marseille">
@@ -70,6 +71,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></a>
                   </figcaption>
             </figure>
             <figure class="block_hotel_marseille">
@@ -77,6 +79,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i></a>
                   </figcaption>
             </figure>
             <figure class="block_hotel_marseille">
@@ -84,6 +87,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
                   </figcaption>
             </figure>
             <figure class="block_hotel_marseille">
@@ -91,6 +95,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i></a>
                   </figcaption>
             </figure>
             <figure class="block_hotel_marseille">
@@ -98,6 +103,7 @@
                   <figcaption>
                     <h3>Auberge La Cannebière</h3>
                     <p>Nuit à partir de <a class="black">25€</a></p>
+                    <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></a>
                   </figcaption>
             </figure>
           </div>
@@ -115,49 +121,55 @@
               <figcaption>
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <a class="black">25€</a></p>
+              <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></a>
               </figcaption>
             </figure>
-            <div class="Hebergement_populaire_block">
+            <figure class="Hebergement_populaire_block">
               <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+              <figcaption>
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <a class="black">25€</a></p>
-            </div>
-            <div class="Hebergement_populaire_block_v2">
-              <div class="Hebergement_populaire_block_v2_img">
-                <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-              </div>
+              <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i></a>
+              </figcaption>
+            </figure>
+            <figure class="Hebergement_populaire_block">
+              <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+              <figcaption>
               <h3>Auberge La Cannebière</h3>
               <p>Nuit à partir de <a class="black">25€</a></p>
-            </div>
+              <a href="#" class="stars"><span class="blue"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><i class="fas fa-star"></i></a>
+              </figcaption>
+            </figure>
           </div>
         </section>
       </div>
       <h1 class="activite_titre">Activités à Marseille</h1>
-      <div class="activite">
-          <div class="activite_block1 activite_block none">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
+        <div class="activite">
+          <div class="activite_block1">
+            <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="">
             <p>Vieux Port</p>
           </div>
-          <div class="activite_block2 activite_block">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-            <p>Vieux Port</p>
+          <div class="activite_block2">
+            <img src="img/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="">
+            <p>Fort de Pomègues</p>
           </div>
-          <div class="activite_block3 activite_block">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-            <p>Vieux Port</p>
+          <div class="activite_block3">
+            <img src="img/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="">
+            <p>île du frioul</p>
           </div>
-          <div class="activite_block4 activite_block">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-            <p>Vieux Port</p>
+          <div class="activite_block4">
+            <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="">
+            <p>Parc National des Calanques</p>
           </div>
-          <div class="activite_block5 activite_block">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-            <p>Vieux Port</p>
+          <div class="activite_block5">
+            <img src="img/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="">
+            <p>Notre-Dame-de-la-Garde</p>
           </div>
-          <div class="activite_block6 activite_block">
-            <img src="img/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="">
-            <p>Vieux Port</p>
+          <div class="activite_block6">
+            <img src="img/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="">
+            <p>Parc Longchamp</p>
           </div>
+        </div>
       </div>
     </main> <!-- Fin container -->
     <footer>
