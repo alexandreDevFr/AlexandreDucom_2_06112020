@@ -590,7 +590,6 @@ nav{
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 80%;
   box-shadow: 0 5px 9px 0 rgba(0,0,0,.21);
 }
 
@@ -674,9 +673,6 @@ nav{
   font-weight: 600;
 }
 
-.activite_block6 img{
-  height: 10%;
-}
 
 @media screen and (max-width: 1830px){
   .activite{
