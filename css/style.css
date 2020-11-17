@@ -8,7 +8,9 @@ Gris        : #F2F2F2
 
                           **/
 
-* { box-sizing: border-box; }
+*{
+  box-sizing: border-box;
+}
 
 html,body{
   margin: 0;
@@ -356,7 +358,6 @@ nav{
 .block_hotel_marseille img{
   display: block;
   max-width: 95%;
-  max-height: 60%;
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   margin-left: 8px;
@@ -466,7 +467,18 @@ nav{
   padding-top: 56px;
   color: #F2F2F2;
 }
-
+@media screen and (max-width: 1240px){
+  .block_hotel_marseille img{
+    display: block;
+    width: 100%;
+    max-height: 60%;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+    margin-left: 8px;
+    margin-top: 8px;
+    height: 160px;
+  }
+}
 @media screen and (max-width: 1235px){
   .Hebergement{
     flex-direction: column-reverse;
@@ -489,15 +501,6 @@ nav{
     height: 260px;
     margin: 0;
     margin-bottom: 32px;
-  }
-  .block_hotel_marseille_image img{
-    display: block;
-    width: 100%;
-    border-top-left-radius: 28px;
-    border-top-right-radius: 28px;
-    margin-left: 8px;
-    margin-top: 8px;
-    height: 160px;
   }
   .block_hotel_marseille_image{
     height: 200px;
@@ -539,7 +542,7 @@ nav{
   .block_hotel_marseille{
     margin-left: 6%;
     margin-right: 6%;
-    height: 380px;
+    height: auto;
   }
   .block_hotel_marseille img{
     max-width: 96%;
@@ -554,6 +557,10 @@ nav{
   }
   .block_hotel_marseille .stars{
     padding-left: 8px;
+    padding-bottom: 6px;
+  }
+  .Hebergement_marseille figure{
+    margin-bottom: 6px;
   }
 }
 
