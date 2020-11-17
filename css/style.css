@@ -101,37 +101,37 @@ nav{
 }
 
 .search{
+  display: flex;
   background-color: #fff;
   width: 480px;
   height: 60px;
   line-height: 60px;
   border-radius: 20px;
   margin-top: 20px;
-  display: flex;
 }
 
 .search i{
-  padding:  16px 21px 15px 21px;
   background-color: #F2F2F2;
   border-radius:  20px 0 0 20px;
   color: black;
-  margin-left: -2px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search input{
   background-color: #fff;
-  padding:  17px 24px 13px 120px;
-  outline: none;
+  padding:  5px;
   border: 1px solid #F2F2F2;
-  margin-left: -5px;
+  width: 250px;
 }
 
 .search button{
   background-color: #0065FC;
   border: 0;
-  padding: 18px 20px 13px 25.9px;
+  padding: 5px;
   border-radius:  0px 20px 20px 0px;
-  margin-left: -5px;
   color: #fff;
 }
 
@@ -190,9 +190,16 @@ nav{
     display: none;
   }
   .search button i{
-    display: inherit;
+    display: flex;
     padding: 0px 0px 0px 0px;
     font-size: 18px;
+    width: 40px;
+  }
+  .search input{
+    width: 300px;
+  }
+  .search{
+
   }
   .search button{
     border-radius: 15px;
@@ -206,12 +213,14 @@ nav{
   .menu li{
     line-height: 32px;
     margin: 0;
+    padding: 0;
     font-size: 20px;
     padding-left: 70px;
-    padding-right: 62px;
+    padding-right: 40px;
   }
   nav ul.menu{
     padding: 0;
+    padding-right: 1px;
   }
   .search{
     width: auto;
@@ -333,6 +342,7 @@ nav{
 }
 
 .block_hotel_marseille{
+  align-items: center;
   width: 30%;
   height: 320px;
   background-color: #fff;
@@ -346,6 +356,7 @@ nav{
 .block_hotel_marseille img{
   display: block;
   max-width: 95%;
+  max-height: 60%;
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   margin-left: 8px;
@@ -353,13 +364,13 @@ nav{
 }
 
 .block_hotel_marseille h3{
-  margin-left: 6%;
-  margin-bottom: 4%;
-  margin-top: 6%;
+  margin-left: 6px;
+  margin-bottom: 4px;
+  margin-top: 6px;
 }
 
 .block_hotel_marseille p{
-  margin-left: 6%;
+  margin-left: 6px;
 }
 
 .block_hotel_marseille .stars{
@@ -532,6 +543,7 @@ nav{
   }
   .block_hotel_marseille img{
     max-width: 96%;
+    max-height: 80%;
   }
   .block_hotel_marseille h3{
     margin-top: 8px;
@@ -571,7 +583,7 @@ nav{
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  width: 435px;
+  width: 80%;
   box-shadow: 0 5px 9px 0 rgba(0,0,0,.21);
 }
 
@@ -681,6 +693,27 @@ nav{
   font-weight: bold;
   padding: 0 12px 0 12px;
   font-size: 16px;
+}
+
+@media screen and (max-width: 500px){
+  div .activite_block1{
+    width: 90%;
+  }
+  div .activite_block2{
+    width: 90%;
+  }
+  div .activite_block3{
+    width: 90%;
+  }
+  div .activite_block4{
+    width: 90%;
+  }
+  div .activite_block5{
+    width: 90%;
+  }
+  div .activite_block6{
+    width: 90%;
+  }
 }
 
 /**
