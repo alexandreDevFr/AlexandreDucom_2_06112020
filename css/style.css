@@ -358,6 +358,8 @@ nav{
 .block_hotel_marseille img{
   display: block;
   max-width: 95%;
+  height: 70%;
+  width: 100%;
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   margin-left: 8px;
@@ -442,6 +444,8 @@ nav{
 .Hebergement_populaire_block img{
   display: block;
   max-width: 60%;
+  height: 190px;
+  width: 200px;
   border-top-left-radius: 28px;
   border-bottom-left-radius: 28px;
 }
