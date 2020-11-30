@@ -546,7 +546,7 @@ nav{
   .block_hotel_marseille{
     margin-left: 6%;
     margin-right: 6%;
-    height: auto;
+    margin-bottom: 32px;
   }
   .block_hotel_marseille img{
     max-width: 96%;
@@ -562,9 +562,6 @@ nav{
   .block_hotel_marseille .stars{
     padding-left: 8px;
     padding-bottom: 6px;
-  }
-  .Hebergement_marseille figure{
-    margin-bottom: 6px;
   }
 }
 
