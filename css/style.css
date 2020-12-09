@@ -682,7 +682,7 @@ nav{
 
 @media screen and (max-width: 1830px){
   .activite{
-    display: block;
+
   }
   .activite div{
     margin: 32px 0;
@@ -693,6 +693,11 @@ nav{
   }
 }
 
+@media screen and (max-width: 1235px){
+  .activite{
+    display: block;
+  }
+}
 
 .none{
   margin-left: 0;
