@@ -129,12 +129,24 @@ nav{
   width: 250px;
 }
 
+.search input::placeholder{
+  font-size: 20px;
+  padding-left: 16px;
+  font-family: Raleway;
+  font-weight: bold;
+  color: black;
+}
+
 .search button{
   background-color: #0065FC;
   border: 0;
-  padding: 5px;
+  padding: 0 20px 0 20px;
   border-radius:  0px 20px 20px 0px;
   color: #fff;
+}
+
+.search button span{
+  font-size: 16px;
 }
 
 .search button a{
@@ -200,12 +212,19 @@ nav{
   .search input{
     width: 300px;
   }
+  .search input::placeholder{
+    font-size: 20px;
+    padding-left: 16px;
+    font-family: Raleway;
+    font-weight: bold;
+    color: black;
+  }
   .search{
 
   }
   .search button{
     border-radius: 15px;
-    padding: 16px 20px 13px 18px;
+    padding: 0px 10px 0px 10px;
     margin-left: -10px;
   }
   .menu{
@@ -246,13 +265,10 @@ nav{
 
 .filtre_header button{
   border-radius: 32px;
-  border: 1px solid #DEEBFF;
+  border: 2px solid #d6d6d6;
   margin-right: 22px;
-  box-shadow: 0 2px 3px 0 rgba(0,0,0,.21);
   background-color: #fff;
-  appearance: none;
-    -moz-appearance: none;
--webkit-appearance: none;
+  margin: 10px;
 }
 
 .filtre_header i{
@@ -279,26 +295,35 @@ nav{
 }
 
 .info_header{
-
+  display: flex;
+  align-items: center;
 }
 
 .info_header i{
- padding: 7px;
- border: 1px solid #DEEBFF;
- border-radius: 100%;
- font-size: 12px;
- margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #DEEBFF;
+  border-radius: 100%;
+  font-size: 12px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
 }
 
 .info_header p{
-  display: contents;
+
 }
 
 @media screen and (max-width: 500px){
   .info_header p{
     font-size: 14px;
   }
+  .search input::placeholder{
+    font-size: 14px;
+  }
 }
+
 
 /**
 
@@ -344,18 +369,18 @@ nav{
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-left: 2%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 .block_hotel_marseille{
   align-items: center;
-  width: 30%;
+  width: 30.33%;
   height: 320px;
   background-color: #fff;
   border-radius: 32px;
   margin-left: 1.5%;
   margin-right: 1.5%;
-  margin-bottom: 32px;
   box-shadow: 0 5px 9px 0 rgba(0,0,0,.21);
 }
 
@@ -383,10 +408,6 @@ nav{
   margin-left: 6px;
 }
 
-.block_hotel_marseille .stars{
-  padding-left: 2px;
-}
-
 .block_hotel_marseille i{
   color: #F2F2F2;
 }
@@ -404,6 +425,7 @@ nav{
   text-decoration: none;
   color: black;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .Hebergement_populaire{
@@ -495,19 +517,16 @@ nav{
   .title_populaire h2{
     font-size: 20px;
   }
-  .title_populaire i{
-    display: none;
-  }
 }
 
-@media screen and (max-width: 860px){
-  .Hebergement{
-    flex-direction: column-reverse;
-  }
+@media screen and (max-width: 1100px){
   .Hebergement_populaire{
     margin-right: 64px;
     margin-bottom: 32px;
     width: 100%;
+  }
+  .Hebergement_populaire img{
+    object-fit: cover;
   }
   .Hebergement_marseille{
     margin-right: 0px;
@@ -521,15 +540,25 @@ nav{
   }
   .block_hotel_marseille{
     height: 260px;
+    width: 45%;
     margin: 0;
     margin-bottom: 32px;
-    margin-right: 10%;
+    margin-right: 5%;
   }
   .block_hotel_marseille_image{
     height: 200px;
   }
+  .block_hotel_marseille img{
+    object-fit: cover;
+  }
   .Hebergement_marseille .add_more{
     margin-left: 8%;
+  }
+  .block_hotel_marseille figcaption{
+    padding-left: 16px;
+  }
+  .block_hotel_marseille .stars{
+    margin-left: 6px;
   }
 }
 
@@ -539,6 +568,12 @@ nav{
 
 .blue a{
   color: #0065FC;
+}
+
+@media all and (max-width: 1100px){
+  .Hebergement{
+    flex-direction: column-reverse;
+  }
 }
 
 @media screen and (max-width: 500px){
@@ -552,7 +587,6 @@ nav{
   }
   .title_populaire i{
     float: right;
-    margin-left: 120px;
   }
   .Hebergement_populaire{
     margin-right: 0px;
@@ -590,10 +624,6 @@ nav{
   .block_hotel_marseille p{
     margin-bottom: 8px;
   }
-  .block_hotel_marseille .stars{
-    padding-left: 8px;
-    padding-bottom: 6px;
-  }
 }
 
 /**
@@ -622,7 +652,7 @@ nav{
   border-top-right-radius: 30px;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  box-shadow: 0 5px 9px 0 rgba(0,0,0,.21);
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,.21);
 }
 
 .activite img{
@@ -702,10 +732,29 @@ nav{
   }
   .activite{
     display: block;
-    padding: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
   }
   .activite div{
     margin-bottom: 6%;
+  }
+  .activite_block1{
+    height: 220px;
+  }
+  .activite_block2{
+    height: 220px;
+  }
+  .activite_block3{
+    height: 220px;
+  }
+  .activite_block4{
+    height: 220px;
+  }
+  .activite_block5{
+    height: 220px;
+  }
+  .activite_block6{
+    height: 220px;
   }
 }
 
@@ -720,6 +769,8 @@ footer{
   background-color: #F2F2F2;
   display: flex;
   width: 100%;
+  justify-content: space-around;
+  padding-top: 8px;
 }
 
 footer ul{
@@ -731,19 +782,14 @@ footer li{
   margin-bottom: 12px;
 }
 
-.footer_left{
-  margin: 32px 220px 32px 32px;
-}
-
-.footer_center{
-  margin: 32px 220px 32px 32px;
-}
-
-.footer_right{
-  margin: 32px 0px 32px 32px;
-}
-
-@media screen and (max-width: 1070px){
+@media all and (max-width: 1070px){
   footer{
-    display: grid;
+    flex-direction: column;
+    padding-left: 16px;
   }
+
+@media all and (max-width: 340px){
+  .filtre_header button span{
+    font-size: 12px;
+  }
+}
