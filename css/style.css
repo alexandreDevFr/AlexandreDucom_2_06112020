@@ -50,7 +50,6 @@ a{
                           **/
 
 header{
-  line-height: 72px;
   margin-left: 32px;
   margin-right: 32px;
 }
@@ -58,6 +57,7 @@ header{
 nav{
   display: flex;
   justify-content: space-between;
+  line-height: 72px;
 }
 
 .logo{
@@ -313,6 +313,7 @@ nav{
 .info_header{
   display: flex;
   align-items: center;
+  max-height: 50px;
 }
 
 .info_header i{
@@ -327,13 +328,17 @@ nav{
   padding-left: 12px;
 }
 
-.info_header p{
-
+.info_header{
+  margin-bottom: 20px;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 468px){
   .info_header p{
     font-size: 14px;
+  }
+  .info_header i{
+    min-width: 32px;
+    min-height: 32px;
   }
   .search input::placeholder{
     font-size: 14px;
@@ -571,9 +576,6 @@ nav{
   }
   .Hebergement_marseille .add_more{
     margin-left: 8%;
-  }
-  .block_hotel_marseille figcaption{
-    padding-left: 16px;
   }
   .block_hotel_marseille .stars{
     margin-left: 6px;
